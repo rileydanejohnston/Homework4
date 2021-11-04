@@ -1,14 +1,14 @@
-//
-//  main.cpp
-//  Homework4
-//
-//  Created by Riley Johnston on 11/4/21.
-//
+// Riley Johnston
+// CS137
+// Homework 4
 
+#include "Package.h"
 #include <iostream>
+#include <string>
+using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main()
+{
+    
     return 0;
 }

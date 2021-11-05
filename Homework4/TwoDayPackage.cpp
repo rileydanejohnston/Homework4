@@ -15,3 +15,13 @@ TwoDayPackage& TwoDayPackage::setFlatFee(double twoDayFlatFee)
     flatFee = (twoDayFlatFee >= 0.0) ? twoDayFlatFee : 0.0;
     return *this;
 }
+
+double TwoDayPackage::getFlatFee() const
+{
+    return flatFee;
+}
+
+double TwoDayPackage::calculateCost() const
+{
+    return getFlatFee() + Package::calculateCost();
+}

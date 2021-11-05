@@ -151,3 +151,8 @@ double Package::getCostPerOz() const
 {
     return costPerOz;
 }
+
+double Package::calculateCost() const
+{
+    return getWeightOz() * getCostPerOz();
+}

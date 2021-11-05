@@ -28,5 +28,15 @@ int main()
     cout << "City: "    << box1.getToCity() << endl;
     cout << "State: "   << box1.getToState() << endl;
     cout << "Zip: "     << box1.getToZip() << endl;
+    
+    cout << endl;
+    
+    cout << "Cost info" << endl;
+    cout << "-----------------------------" << endl;
+    cout << "Weight: " << box1.getWeightOz() << " ounces" << endl;
+    cout << "Cost (per oz): $" << box1.getCostPerOz() << endl;
+    cout << "-----------------------------" << endl;
+    cout << "Total: $" << box1.calculateCost() << endl;
+    
     return 0;
 }

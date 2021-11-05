@@ -49,7 +49,7 @@ public:
     string getToZip() const;
     double getWeightOz() const;
     double getCostPerOz() const;
-    
+    double calculateCost() const;
 };
 
 #endif /* Package_hpp */

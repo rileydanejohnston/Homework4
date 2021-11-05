@@ -6,19 +6,17 @@
 
 Package::Package(const string &sendName, const string &sendAdd, const string &sendCity, const string &sendState, const string &sendZip, const string &destName, const string &destAdd, const string &destCity, const string &destState, const string &destZip, double ounces, double cost)
 {
-    setFromName(sendName);
-    setFromAddress(sendAdd);
-    setFromCity(sendCity);
-    setFromState(sendState);
-    setFromZip(sendZip);
-    
-    setToName(destName);
-    setToAddress(destAdd);
-    setToCity(destCity);
-    setToState(destState);
-    setToZip(destZip);
-    
-    setWeightOz(ounces);
+    setFromName(sendName).
+    setFromAddress(sendAdd).
+    setFromCity(sendCity).
+    setFromState(sendState).
+    setFromZip(sendZip).
+    setToName(destName).
+    setToAddress(destAdd).
+    setToCity(destCity).
+    setToState(destState).
+    setToZip(destZip).
+    setWeightOz(ounces).
     setCostPerOz(cost);
 }
 
@@ -92,4 +90,64 @@ Package& Package::setCostPerOz(double cost)
 {
     costPerOz = (cost >= 0.0) ? cost : 0.0;
     return *this;
+}
+
+string Package::getFromName() const
+{
+    return fromName;
+}
+
+string Package::getFromAddress() const
+{
+    return fromAddress;
+}
+
+string Package::getFromCity() const
+{
+    return fromCity;
+}
+
+string Package::getFromState() const
+{
+    return fromState;
+}
+
+string Package::getFromZip() const
+{
+    return fromZip;
+}
+
+string Package::getToName() const
+{
+    return toName;
+}
+
+string Package::getToAddress() const
+{
+    return toAddress;
+}
+
+string Package::getToCity() const
+{
+    return toCity;
+}
+
+string Package::getToState() const
+{
+    return toState;
+}
+
+string Package::getToZip() const
+{
+    return toZip;
+}
+
+double Package::getWeightOz() const
+{
+    return weightOz;
+}
+
+double Package::getCostPerOz() const
+{
+    return costPerOz;
 }

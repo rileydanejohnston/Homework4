@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C24CF6362735F41500DC957B /* TwoDayPackage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C24CF6342735F41500DC957B /* TwoDayPackage.cpp */; };
 		C28CE0E527342D1700205517 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C28CE0E427342D1700205517 /* main.cpp */; };
 		C28CE0ED27342EC500205517 /* Package.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C28CE0EB27342EC500205517 /* Package.cpp */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C24CF6342735F41500DC957B /* TwoDayPackage.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = TwoDayPackage.cpp; sourceTree = "<group>"; };
+		C24CF6352735F41500DC957B /* TwoDayPackage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoDayPackage.h; sourceTree = "<group>"; };
 		C28CE0E127342D1700205517 /* Homework4 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Homework4; sourceTree = BUILT_PRODUCTS_DIR; };
 		C28CE0E427342D1700205517 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		C28CE0EB27342EC500205517 /* Package.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Package.cpp; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 			isa = PBXGroup;
 			children = (
 				C28CE0E427342D1700205517 /* main.cpp */,
+				C24CF6342735F41500DC957B /* TwoDayPackage.cpp */,
+				C24CF6352735F41500DC957B /* TwoDayPackage.h */,
 				C28CE0EB27342EC500205517 /* Package.cpp */,
 				C28CE0EC27342EC500205517 /* Package.h */,
 			);
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24CF6362735F41500DC957B /* TwoDayPackage.cpp in Sources */,
 				C28CE0ED27342EC500205517 /* Package.cpp in Sources */,
 				C28CE0E527342D1700205517 /* main.cpp in Sources */,
 			);

@@ -11,11 +11,13 @@ using namespace std;
 
 int main()
 {
-    Package box1("Bruce Banner", "123 Fake St", "Smithville", "TX", "78957", "Matt Murdock", "1919 Super Pl", "Los Angeles", "CA", "90042", 15.2, 2.95);
+    Package box1;
+    TwoDayPackage box2;
+    OvernightPackage box3;
     
-    TwoDayPackage box2("Peter Parker", "456 Real St", "Smithville", "TX", "78957", "Stephen Strange", "103 Superfly Ave", "Los Angeles", "CA", "90042", 15.2, 2.95, 30.0);
+    //TwoDayPackage box2("Peter Parker", "456 Real St", "Smithville", "TX", "78957", "Bruce Banner", "103 Superfly Ave", "Los Angeles", "CA", "90042", 15.2, 2.95, 30.0);
     
-    OvernightPackage box3("Peter Parker", "456 Real St", "Smithville", "TX", "78957", "Stephen Strange", "103 Superfly Ave", "Los Angeles", "CA", "90042", 15.2, 2.95, 12.50);
+    //OvernightPackage box3("Peter Parker", "456 Real St", "Smithville", "TX", "78957", "Bruce Banner", "103 Superfly Ave", "Los Angeles", "CA", "90042", 15.2, 2.95, 12.50);
     
     
     cout << "Sender info" << endl;

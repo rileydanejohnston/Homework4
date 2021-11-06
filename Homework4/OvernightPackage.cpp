@@ -4,14 +4,24 @@
 
 #include "OvernightPackage.h"
 
-OvernightPackage::OvernightPackage(const string &sendName, const string &sendAdd, const string &sendCity, const string &sendState, const string &sendZip, const string &destName, const string &destAdd, const string &destCity, const string &destState, const string &destZip, double ounces, double cost, double ozFee):
-Package(sendName, sendAdd, sendCity, sendState, sendZip, destName, destAdd, destCity, destState, destZip, ounces, cost)
+OvernightPackage::OvernightPackage(const string &sendName, const string &sendAdd, const string &sendCity, const string &sendState, const string &sendZip, const string &destName, const string &destAdd, const string &destCity, const string &destState, const string &destZip, double ounces, double costPerOz, double addOzFee):
+Package(sendName, sendAdd, sendCity, sendState, sendZip, destName, destAdd, destCity, destState, destZip, ounces, costPerOz)
 {
-    setFeePerOz(ozFee);
+    setExtraFeePerOz(addOzFee);
 }
 
-OvernightPackage& OvernightPackage::setFeePerOz(double ozFee)
+OvernightPackage& OvernightPackage::setExtraFeePerOz(double addOzFee)
 {
-    feePerOz = (ozFee >= 0.0) ? ozFee : 0.0;
+    extraFeePerOz = (addOzFee >= 0.0) ? addOzFee : 0.0;
     return *this;
+}
+
+double OvernightPackage::getExtraFeePerOz() const
+{
+    return extraFeePerOz;
+}
+
+double OvernightPackage::calculateCost() const
+{
+    return (getExtraFeePerOz() + Package::getCostPerOz()) * Package::getWeightOz();
 }

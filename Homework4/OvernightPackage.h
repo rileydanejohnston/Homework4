@@ -9,11 +9,12 @@
 
 class OvernightPackage : public Package {
     private:
-        double feePerOz;
+        double extraFeePerOz;
     public:
         OvernightPackage(const string&, const string&, const string&, const string&, const string&, const string&, const string&, const string&, const string&, const string&, double, double, double);
-        OvernightPackage& setFeePerOz(double);
-        double getFeePerOz() const;
+        OvernightPackage& setExtraFeePerOz(double);
+        double getExtraFeePerOz() const;
+        double calculateCost() const;
 };
 
 #endif

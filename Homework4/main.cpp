@@ -4,6 +4,7 @@
 
 #include "Package.h"
 #include "TwoDayPackage.h"
+#include "OvernightPackage.h"
 #include <iostream>
 #include <string>
 using namespace std;
@@ -14,34 +15,36 @@ int main()
     
     TwoDayPackage box2("Peter Parker", "456 Real St", "Smithville", "TX", "78957", "Stephen Strange", "103 Superfly Ave", "Los Angeles", "CA", "90042", 15.2, 2.95, 30.0);
     
+    OvernightPackage box3("Peter Parker", "456 Real St", "Smithville", "TX", "78957", "Stephen Strange", "103 Superfly Ave", "Los Angeles", "CA", "90042", 15.2, 2.95, 12.50);
+    
     
     cout << "Sender info" << endl;
     cout << "-----------------------------" << endl;
-    cout << "Name: "    << box2.getFromName() << endl;
-    cout << "Address: " << box2.getFromAddress() << endl;
-    cout << "City: "    << box2.getFromCity() << endl;
-    cout << "State: "   << box2.getFromState() << endl;
-    cout << "Zip: "     << box2.getFromZip() << endl;
+    cout << "Name: "    << box3.getFromName() << endl;
+    cout << "Address: " << box3.getFromAddress() << endl;
+    cout << "City: "    << box3.getFromCity() << endl;
+    cout << "State: "   << box3.getFromState() << endl;
+    cout << "Zip: "     << box3.getFromZip() << endl;
     
     cout << endl;
     
     cout << "Destination info" << endl;
     cout << "-----------------------------" << endl;
-    cout << "Name: "    << box2.getToName() << endl;
-    cout << "Address: " << box2.getToAddress() << endl;
-    cout << "City: "    << box2.getToCity() << endl;
-    cout << "State: "   << box2.getToState() << endl;
-    cout << "Zip: "     << box2.getToZip() << endl;
+    cout << "Name: "    << box3.getToName() << endl;
+    cout << "Address: " << box3.getToAddress() << endl;
+    cout << "City: "    << box3.getToCity() << endl;
+    cout << "State: "   << box3.getToState() << endl;
+    cout << "Zip: "     << box3.getToZip() << endl;
     
     cout << endl;
     
     cout << "Cost info" << endl;
     cout << "-----------------------------" << endl;
-    cout << "Weight: " << box2.getWeightOz() << " ounces" << endl;
-    cout << "Cost (per oz): $" << box2.getCostPerOz() << endl;
-    cout << "Flat fee: $" << box2.getFlatFee() << endl;
+    cout << "Weight: " << box3.getWeightOz() << " ounces" << endl;
+    cout << "Cost (per oz): $" << box3.getCostPerOz() << endl;
+    cout << "Extra fee (per oz): $" << box3.getExtraFeePerOz() << endl;
     cout << "-----------------------------" << endl;
-    cout << "Total: $" << box2.calculateCost() << endl;
+    cout << "Total: $" << box3.calculateCost() << endl;
     
      
     return 0;

@@ -3,6 +3,8 @@
 // Homework 4
 
 #include "Package.h"
+#include <iostream>
+using namespace std;
 
 Package::Package(const string &sendName, const string &sendAdd, const string &sendCity, const string &sendState, const string &sendZip, const string &destName, const string &destAdd, const string &destCity, const string &destState, const string &destZip, double ounces, double cost)
 {
@@ -155,4 +157,32 @@ double Package::getCostPerOz() const
 double Package::calculateCost() const
 {
     return getWeightOz() * getCostPerOz();
+}
+
+void Package::print() const
+{
+    cout << "Sender info" << endl;
+    cout << "-----------------------------" << endl;
+    cout << "Name: "    << getFromName() << endl;
+    cout << "Address: " << getFromAddress() << endl;
+    cout << "City: "    << getFromCity() << endl;
+    cout << "State: "   << getFromState() << endl;
+    cout << "Zip: "     << getFromZip() << endl;
+    
+    cout << endl;
+    
+    cout << "Destination info" << endl;
+    cout << "-----------------------------" << endl;
+    cout << "Name: "    << getToName() << endl;
+    cout << "Address: " << getToAddress() << endl;
+    cout << "City: "    << getToCity() << endl;
+    cout << "State: "   << getToState() << endl;
+    cout << "Zip: "     << getToZip() << endl;
+    
+    cout << endl;
+    
+    cout << "Cost info" << endl;
+    cout << "-----------------------------" << endl;
+    cout << "Weight: " << getWeightOz() << " ounces" << endl;
+    cout << "Cost (per oz): $" << getCostPerOz() << endl;
 }

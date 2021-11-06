@@ -50,6 +50,7 @@ public:
     double getWeightOz() const;
     double getCostPerOz() const;
     double calculateCost() const;
+    void print() const;
 };
 
 #endif /* Package_hpp */

@@ -14,6 +14,7 @@ class TwoDayPackage : public Package {
         TwoDayPackage& setFlatFee(double);
         double getFlatFee() const;
         double calculateCost() const;
+        void print() const;
 };
 
 #endif /* TwoDayPackage_hpp */

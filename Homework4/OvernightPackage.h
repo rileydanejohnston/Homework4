@@ -15,6 +15,7 @@ class OvernightPackage : public Package {
         OvernightPackage& setExtraFeePerOz(double);
         double getExtraFeePerOz() const;
         double calculateCost() const;
+        void print() const;
 };
 
 #endif
